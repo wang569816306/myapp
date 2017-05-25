@@ -1,18 +1,16 @@
 <template>
   <div class="navbar">
-    <router-link to="/index">热映影片</router-link>
-    <router-link to="/event">同城活动</router-link>
-    <router-link to="/about">关于蒜瓣</router-link>
+    <router-link to="/">维</router-link>
+    <router-link to="/album">书</router-link>
+    <router-link to="/about">会</router-link>
   </div>
 </template>
 
 <script>
-import router from '../router'
 export default {
   name: 'Navbar',
   data () {
     return {
-      selected:'movie'
     }
   }
 }
@@ -33,13 +31,11 @@ export default {
   }
   .navbar a {
     display: inline-block;
-    padding: 1rem 0;
     text-decoration: none;
     color: #fff;
-    width: 34%;
+    width: 33%;
     background: #34495E;
     text-align: center;
-    letter-spacing: 3px;
     border-right: 1px solid #546769;
   }
   .navbar a:last-child {

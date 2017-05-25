@@ -1,12 +1,12 @@
 <template>
-  <div class="index">
-    我是index页面
-  </div>
+	<div class="album">
+		我是相册
+	</div>
 </template>
 
 <script>
 export default {
-  name: 'index',
+  name: 'album',
   data () {
     return {
     }
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.index {
+.album {
   text-align: center;
 }
 
