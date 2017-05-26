@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
 export default {
   data () {
     return {
@@ -32,10 +32,10 @@ li{list-style-type:none;}
 #app {
     position: relative;
     width: 100%;
-    max-width: 640px;
+    max-width: 750px;
     min-width: 320px;
     margin: 0 auto;
-    width: 6.4rem;
+    width: 7.5rem;
     background: #fff;
 }
 </style>

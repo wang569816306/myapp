@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
-import About from '@/components/About'
-import Album from '@/components/Album'
+import index from '@/components/index'
+import wei from '@/components/wei'
+import book from '@/components/book'
+import vip from '@/components/vip'
+import partner from '@/components/partner'
 
 Vue.use(Router)
 
@@ -10,18 +12,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
-      component: Index
+      name: 'index',
+      component: index
     },
     {
-      path: '/about',
-      name: 'About',
-      component: About
+      path: '/wei',
+      name: 'wei',
+      component: wei
     },
     {
-      path: '/album',
-      name: 'Album',
-      component: Album
+      path: '/book',
+      name: 'book',
+      component: book
+    },
+    {
+      path: '/vip',
+      name: 'vip',
+      component: vip
+    },
+    {
+      path: '/partner',
+      name: 'partner',
+      component: partner
     }
   ]
 })
