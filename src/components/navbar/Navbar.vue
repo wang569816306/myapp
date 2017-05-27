@@ -2,31 +2,31 @@
   <div class="navbar">
     <router-link to="/">
       <div @click="activeBar(0);">
-        <i><img class="icon_home" src="./img/home.png"></i>
+        <i class="iconfont icon-home"></i>
         <p>首页</p>
       </div>
     </router-link>
     <router-link to="/wei">
       <div @click="activeBar(1);">
-        <i><img class="icon_home" src="./img/wei.png"></i>
+        <i class="iconfont icon-live"></i>
         <p>维</p>
       </div>
     </router-link>
     <router-link to="/about">
       <div @click="activeBar(2);">
-        <i><img class="icon_home" src="./img/book.png"></i>
+        <i class="iconfont icon-book"></i>
         <p>书</p>
       </div>
     </router-link>
     <router-link to="/vip">
       <div @click="activeBar(3);">
-        <i><img class="icon_home" src="./img/vip.png"></i>
+        <i class="iconfont icon-people"></i>
         <p>会</p>
       </div>
     </router-link>
     <router-link to="/partner">
       <div @click="activeBar(4);">
-        <i><img class="icon_home" src="./img/partner.png"></i>
+        <i class="iconfont icon-people1"></i>
         <p>合伙人</p>
       </div>
     </router-link>
@@ -70,20 +70,10 @@ export default {
   width: 33%;
   height: 0.8rem;
   color: #7f8389;
+  text-align: center;
 }
 .navbar a i{
-  display: block;
-  width: 0.5rem;
-  height: 0.5rem;
-  margin: auto;
-}
-.navbar a i img{
-  display: block;
-  width: 100%;
-}
-.navbar a p{
-  text-align: center;
-  font-size: 0.24rem;
+  font-size: 0.4rem;
 }
 .navbar .router-link-exact-active p{
   color: #56be56;
@@ -93,6 +83,10 @@ export default {
 }
 .navbar .router-link-exact-active{
   -webkit-animation:deg 2s;
+}
+.navbar .router-link-exact-active i{
+  color: #56be56;
+  font-size: 0.4rem;
 }
 @-webkit-keyframes deg{
   0%{ transform:rotate(30deg); }
