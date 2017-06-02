@@ -98,7 +98,7 @@ export default {
 .todayFoodTop .title{
   text-align: left;
   font-size: 0.36rem;
-  border-left: 0.08rem solid #00b650;
+  border-left: 0.1rem solid #00b650;
   text-indent: 0.1rem;
   font-weight: 800;
   height: 0.6rem;
