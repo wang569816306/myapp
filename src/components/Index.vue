@@ -14,6 +14,7 @@
       <div class="todayFoodTop">
         <div class="title">今日食粮</div>
       </div>
+      <foodDiv></foodDiv>
     </div>
   </div>
 </template>
@@ -22,11 +23,13 @@
 import Swiperdiv from './swiper/swiper'
 import loading from './Loading'
 import axios from "axios"
+import foodDiv from './food/food'
 export default {
   name: 'index',
   components: {
     Swiperdiv,
-    loading
+    loading,
+    foodDiv
   },
   data () {
     return {
@@ -87,6 +90,7 @@ export default {
   background: #fff;
   border-top: 0.2rem solid #f2f2f2;
   padding: 0% 2%;
+  border-bottom: 0.2rem solid #f2f2f2;
 }
 .todayFoodTop{
   width: 100%;
